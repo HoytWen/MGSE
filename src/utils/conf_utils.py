@@ -105,7 +105,7 @@ class ModelConfig(metaclass=ABCMeta):
         parser.add_argument("-v", "--verbose", default=1, type=int,
                             help='Verbose level, higher level generates more log, -1 to shut down')
         parser.add_argument("-w", "--wandb_name", default='OFF', type=str, help='Wandb logger or not.')
-        parser.add_argument("--d_epochs", default=0, type=int)
+        parser.add_argument("--d_epochs", default=50, type=int)
         parser.add_argument("--ft_epochs", default=100, type=int)
         parser.add_argument("--ft_lr", type=float, default=0.001, help='Fintune learning rate')
         parser.add_argument("--ft_dropout", type=float, default=0.5, help='Finetune dropout')
